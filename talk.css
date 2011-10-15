@@ -1,5 +1,5 @@
 #intro {
-	background: rgba(0,0,0,.7);
+	background: rgba(145,185,35,.02);
 	padding: 0;
 	border: 0;
 }
@@ -12,18 +12,39 @@
 
 #intro .attribution {
 	font-family: Helvetica, sans-serif;
-	font-weight: bold;
+	font-weight: lighter;
 	text-align: center;
-	font-size: 100%;
-	line-height: .3;
-	color: rgba(0,0,0,.7);
-	text-shadow: none;
-	background: url(img/rainbow-wood.jpg) bottom;
-	padding:.6em 0 0;
-	overflow: hidden;
+	font-size: 70%;
+	color: rgba(10,165,205,.6);
+	text-shadow: 0 1px 1px white;
+  background: transparent;
+}
+#intro .attribution:before {
+  content:  'By';
+  position: absolute;
+  left: 48%;
+  top: -1.2em;
+  font-size: 65%;
+  opacity: .7;
+}
+#intro .attribution .name{
+  display: inline-block;
+  margin: 0 .4em;
+  color: rgba(80,80,80,0.6);
 }
 
-
+#intro .attribution .name:after{
+  content: '@'attr(data-twitter);
+  display: inline-block;
+  font-size: 40%;
+  font-weight: bold;
+  color: #4cd8f8;
+  -webkit-transform: rotate(45deg) translate(-50%,-.05em);
+  -moz-transform: rotate(45deg) translate(-50%,-.05em);
+  -o-transform: rotate(45deg) translate(-50%,-.05em);
+  -ms-transform: rotate(45deg) translate(-50%,-.05em);
+  transform: rotate(45deg) translate(-50%,-.05em);
+}
 #css-controls-demo label {
 	display: block;
 }

@@ -26,7 +26,7 @@ section > header.slide > h1 {
 }
 
 html {
-	background: black url(img/rainbow-wood.jpg) bottom center;
+	background: black url(img/paper.jpg) bottom center;
 	background-size: cover;
 }
 
@@ -48,7 +48,7 @@ select {
 
 code, pre, style, textarea, input {
 	font-family: Consolas, 'Andale Mono', 'Courier New', monospace;	
-	background:rgba(0,0,0,.4);
+	background:rgba(0,0,0,.1);
 }
 
 code {
@@ -59,16 +59,13 @@ code {
 	-webkit-border-radius:.2em;
 	border-radius:.2em;
 	
-	-moz-box-shadow:.05em .05em .3em black;
-	-webkit-box-shadow:.05em .05em .3em black;
-	box-shadow:.05em .05em .3em black;
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:1px 1px 5px rgba(0, 0, 0, 0.2);
+	box-shadow:1px 2px 1px rgba(0, 0, 0, 0.2);
 	
 	border: 1px solid rgba(0,0,0,0.5);
-	background: rgba(0,0,0,0.25);
-		
-	-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 12px rgba(255,255,255,0.15), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 12px rgba(255,255,255,0.15), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
-	box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 12px rgba(255,255,255,0.15), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+	background: rgba(130,100,0,0.1);
+  
 }
 
 pre, style, textarea {
@@ -79,6 +76,7 @@ pre, style, textarea {
 	-webkit-box-shadow:.1em .1em .5em black inset;
 	-moz-box-shadow:.1em .1em .5em black inset;
 	box-shadow:.1em .1em .5em black inset;
+	
 }
 
 textarea {
@@ -96,20 +94,42 @@ strong, b {
 		text-shadow: 0 0 .6em white;
 	}
 
+#timer {
+  background: rgba(80, 80, 30, 0.07);
+  text-shadow: 0 1px rgba(155,155,155, 0.1);
+  -webkit-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+#timer:before {
+  color: rgba(100,100,100,0.5);
+}
 .slide {
 	padding:0 2.5% 2%;
-	background: rgba(0,0,0,.5);
+	background: rgba(255, 250, 200, 0.02);
 	background-clip: padding-box;
 	-moz-background-clip: padding-box;
-	text-shadow:.05em .05em .1em rgba(0,0,0,.4);
-	color: white;
-	border:30px solid transparent;
+	
+	text-shadow:.04em .04em .08em rgba(255,255,255,.8);
+	-webkit-box-shadow: .01em .05em .4em rgba(0, 0, 0, .15) inset;
+	-moz-box-shadow: .01em .05em .4em rgba(0, 0, 0, .15) inset;
+	box-shadow: .01em .05em .4em rgba(0, 0, 0, .15) inset;
+	
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
+	color: #444;
+	margin: 20px 3% 3%;
+
+
 }
 
 .slide:target::before {
-	background: rgba(255, 255, 255, .6);
-	color: black;
-	text-shadow: .03em .03em .1em white;
+	background: transparent;
+	color: rgba(0, 0, 0, 0.6);
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 	.slide h2 {
@@ -147,18 +167,19 @@ strong, b {
 		
 		.slide > ul > li:before {
 			content:'\2714';
-			color: #a0c12c;
+			color: rgba(160, 193, 44, 0.5);
 			padding-right: .2em;
-		}
-		
+			text-shadow: 0 1px 1px rgba(255, 255,255, 0.8);
+		}		
 			.slide li li:before {
 				content: '\279C';
-				color: #28bcbc;
+				color: rgba(88, 184, 219, 0.84);
 				padding-right: .2em;
+				text-shadow: 0 1px 1px rgba(255, 255,255, 0.8);
 			}
 			
 section > header.slide {
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,150,187,.03);
 }
 
 	section > header.slide > h1 {
